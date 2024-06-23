@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./normalize.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./main.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <form class="task-form">
+      <h4>task manager</h4>
+      <div class="form-control">
+        <input type="text" name="name" class="task-input" placeholder="Title" />
+      </div>
+      <div class="form-control">
+        <input
+          type="text"
+          name="description"
+          class="task-input-description"
+          placeholder="Description"
+        />
+      </div>
+      <div class="form-control">
+        <input
+          type="date"
+          name="due-date"
+          class="task-input-due-date"
+          placeholder="Due date"
+        />
+      </div>
+      <button type="submit" class="btn submit-btn">submit</button>
+      <div class="form-alert"></div>
+    </form>
+    <section class="tasks-container">
+      <p class="loading-text">Loading...</p>
+      <div class="tasks">
+        <!-- <div class="single-task">
+          <div class="task-detail">
+            <div class="task-header">
+              <h5 class="task-title">
+                <span><i class="far fa-check-circle"></i></span>Task name
+              </h5>
+              <div class="task-links">
+                <a href="task.html?id=${taskID}" class="edit-link">
+                  <i class="fas fa-edit"></i>
+                </a>
+                <button type="button" class="delete-btn" data-id="${taskID}">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div>
+            </div>
+            <h5>2024-5-7</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+              facilis at aut ad ea ratione debitis quas quidem iste iure?
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./browser-app.js"></script>
+  </body>
+</html>
